@@ -20,20 +20,13 @@
 
 
 
-  <div class="container breath">
-    <section>
-
-        <ul>
-          <li ng-repeat="phone in phones">
-
-            <h4>{{phone.title}}</h4>
-            <p>{{phone.contentSnippet}}</p>
-            <p>Posted: {{phone.publishedDate}}</p>
-          </li>
-        </ul>
-
+    <section class="postcards">
+      <div class="card" ng-repeat="phone in phones">
+        <h4>{{phone.title}}</h4>
+        <p>{{phone.contentSnippet}}</p>
+        <p>Posted: {{phone.publishedDate}}</p>
+      </div>
     </section>
-  </div>
 
   <!--https://gist.github.com/davidchang/4441416#file-feed-reader-v1-html-L65 -->
 
