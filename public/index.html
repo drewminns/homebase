@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" ng-app="craigslistApp">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Title goes here</title>
+
+  <link rel="shortcut icon" href="images/favicon.png"> 
+  <link rel="apple-itouch-icon" href="images/favicon.png">
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Alegreya' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/print.css" type="text/css" media="print" >
+
+</head>
+<body ng-controller="postViewerCtrl">
+
+
+
+  <div class="container breath">
+    <section>
+
+        <ul>
+          <li ng-repeat="phone in phones">
+
+            <h4>{{phone.title}}</h4>
+            <p>{{phone.contentSnippet}}</p>
+            <p>Posted: {{phone.publishedDate}}</p>
+          </li>
+        </ul>
+
+    </section>
+  </div>
+
+  <!--https://gist.github.com/davidchang/4441416#file-feed-reader-v1-html-L65 -->
+
+	
+  <!-- Load those JS scripts -->
+  <script type="text/javascript" src="js/jquery.1.10.2.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	<script type="text/javascript" src="js/main.min.js"></script>
+
+
+</body>
+</html>
